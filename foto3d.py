@@ -10,14 +10,14 @@ from typing import Union
 import cv2
 import numpy as np
 
-from .foto3d_backend.escena import construir_escena, construir_fondo, construir_marco, crear_nubes, pintar_marco
-from .foto3d_backend.iluminacion import iluminar
-from .foto3d_backend.parametros import Parametros3D
-from .foto3d_backend.segmentacion import alfa_suave, mascara_auto, separar_objetos
-from .foto3d_backend.estilo import (aplanar_color, colorear_partes, indice_de_textura, quitar_contornos,
+from foto3d_backend.escena import construir_escena, construir_fondo, construir_marco, crear_nubes, pintar_marco
+from foto3d_backend.iluminacion import iluminar
+from foto3d_backend.parametros import PRESETS as PRESETS, Parametros3D
+from foto3d_backend.segmentacion import alfa_suave, mascara_auto, separar_objetos
+from foto3d_backend.estilo import (aplanar_color, colorear_partes, indice_de_textura, quitar_contornos,
                      segmentar_partes, separar_elementos)
-from .foto3d_backend.sombras import extruir, sombra_piso, sombra_total
-from .foto3d_backend.volumen import altura_inflada, normales
+from foto3d_backend.sombras import extruir, sombra_piso, sombra_total
+from foto3d_backend.volumen import altura_inflada, normales
 
 Imagen = Union[str, os.PathLike, np.ndarray]
 

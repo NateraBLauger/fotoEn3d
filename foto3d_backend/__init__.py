@@ -1,5 +1,4 @@
-"""Foto3D: convierte una foto en una imagen con look de render 3D (técnicas clásicas)."""
-from ..foto3d import Foto3D, Resultado3D, elegir_preset
+"""Módulos internos de Foto3D."""
 from .parametros import FONDOS, PERFILES, PRESETS, Parametros3D
 
-__all__ = ["Foto3D", "Resultado3D", "elegir_preset", "Parametros3D", "FONDOS", "PERFILES", "PRESETS"]
+__all__ = ["Parametros3D", "FONDOS", "PERFILES", "PRESETS"]
